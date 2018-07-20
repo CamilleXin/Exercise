@@ -4,8 +4,7 @@ __author__ = 'Camille'
 '''
 data from student.txt to test1.xlsx
 '''
-from openpyxl import load_workbook, Workbook
-import os
+from openpyxl import Workbook
 import json
 
 # new_excel = os.getcwd() + os.sep+ "test1.xlsx"
@@ -15,7 +14,6 @@ sheet = wb.active
 sheet.title = 'sheet1'
 with open('student.txt', encoding='utf-8') as s:
     student = json.loads(s.read())
-print(student)
 for i in student:
     student[i].insert(0, i)
     sheet.append(student[i])
