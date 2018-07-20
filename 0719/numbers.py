@@ -6,7 +6,7 @@ __author__ = 'Camille'
 data from numbers.txt to test3.xlsx
 
 '''
-from openpyxl.workbook import Workbook
+from openpyxl import Workbook
 import json
 
 

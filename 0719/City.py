@@ -6,11 +6,11 @@ data from city.txt to city.py
 
 '''
 
-from openpyxl import workbook
+from openpyxl import Workbook
 import json
 
 
-wb = workbook()
+wb = Workbook()
 sheet = wb.active
 
 with open('city.txt', 'r', encoding='utf-8') as c:
